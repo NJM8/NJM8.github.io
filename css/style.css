@@ -1,0 +1,40 @@
+.name {
+  position: absolute;
+  z-index: 100;
+  color: white;
+  padding-left: 150px;
+  text-shadow: 3px 3px 3px #90a4ae;
+}
+
+.title {
+  position: absolute;
+  z-index: 100;
+  color: white;
+  padding-left: 170px;
+  padding-top: 80px;
+  text-shadow: 3px 3px 3px #90a4ae;
+}
+
+.personal-title {
+  font-style: italic;
+  padding-top: 35px;
+  font-size: 36px;
+}
+
+.personal {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.parallax-2 {
+  height: 300px;
+}
+
+.contact-link {
+  padding-left: 40px;
+}
+
+.email-link {
+  color: white;
+  font-style: italic;
+}
