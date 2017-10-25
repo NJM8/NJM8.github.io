@@ -2,9 +2,9 @@ $(document).ready(function(){
   $('.parallax').parallax();
 });
 
-$.extend($.scrollTo.defaults, {
-     duration: 800,
-});
+// $.extend($.scrollTo.defaults, {
+//      duration: 800,
+// });
 $('#navpersonal').click(function() {
      $.scrollTo('#personal');
 });
@@ -17,7 +17,7 @@ $("#navcontact").click(function(){
   $.scrollTo("#contact");
 });
 
-$("document").ready(function(){
-  $(".modal-trigger").leanModal();
-});
+// $("document").ready(function(){
+//   $(".modal-trigger").leanModal();
+// });
 
