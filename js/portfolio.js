@@ -2,9 +2,10 @@ $(document).ready(function(){
   $('.parallax').parallax();
 });
 
-// $.extend($.scrollTo.defaults, {
-//      duration: 800,
-// });
+$.extend($.scrollTo.defaults, {
+     duration: 800,
+});
+
 $('#navpersonal').click(function() {
      $.scrollTo('#personal');
 });
