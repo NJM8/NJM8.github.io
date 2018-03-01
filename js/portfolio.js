@@ -2,20 +2,12 @@ $(document).ready(function(){
   $('.parallax').parallax();
 });
 
-$.extend($.scrollTo.defaults, {
-     duration: 800,
-});
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
 
-$('#navpersonal').click(function() {
-     $.scrollTo('#personal');
-});
-
-$('#navportfolio').click(function() {
-     $.scrollTo('#portfolio');
-});
-
-$("#navcontact").click(function(){
-  $.scrollTo("#contact");
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+   }, 800);
 });
 
 // $("document").ready(function(){

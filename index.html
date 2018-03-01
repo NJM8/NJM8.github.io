@@ -14,15 +14,16 @@ Make those links open in new windows
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" type="text/css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<body>
+<body  class="blue-grey lighten-5" id="top">
   <div class="fixed-action-btn horizontal click-to-toggle" id="floating_hamburger">
     <a class="btn-floating btn-large teal lighten-2">
       <i class="large material-icons">menu</i>
     </a>
     <ul>
-      <li><a class="btn-floating red" id="navpersonal"><i class="material-icons">perm_identity</i></a></li>
-      <li><a class="btn-floating yellow darken-1" id="navportfolio"><i class="material-icons">view_module</i></a></li>
-      <li><a class="btn-floating blue" id="navcontact"><i class="material-icons" class>contact_mail</i></a></li>
+      <li><a class="btn-floating deep-purple accent-2" href="#top"><i class="material-icons">arrow_upward</i></a></li>
+      <li><a class="btn-floating red accent-2" href="#personal"><i class="material-icons">perm_identity</i></a></li>
+      <li><a class="btn-floating amber accent-3" href="#portfolio"><i class="material-icons">view_module</i></a></li>
+      <li><a class="btn-floating light-blue accent-3" href="#contact"><i class="material-icons" class>contact_mail</i></a></li>
     </ul>
   </div>
   <div class="parallax-container">
@@ -53,14 +54,14 @@ Make those links open in new windows
       <img src="https://s32.postimg.org/js2od3cf9/road_through_redwoods.jpg">
     </div>
   </div>
-  <div class="container">
+  <div id="portfolioContainer">
     <div class="row">
-      <div class="col s12 m12 l12 13">
+      <div class="col s12 m12 l12">
         <div class="valign-wrapper">
           <span class="personal-title valign" id="portfolio">Portfolio</span>
         </div>
       </div>
-      <div class="col s12 m6 l5 19">
+      <div class="col s12 m6 l4">
         <div class="card small hoverable">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="https://www.stutteringhelp.org/sites/default/files/pictures/alan-turing.jpg">
@@ -76,7 +77,7 @@ Make those links open in new windows
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l5 19">
+      <div class="col s12 m6 l4">
         <div class="card small hoverable">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="https://s32.postimg.org/r58fqeq8l/01860_sanfrancisco_2560x1600.jpg">
@@ -88,6 +89,22 @@ Make those links open in new windows
             <span class="card-title grey-text text-darken-4">Random Quote Generator<i class="material-icons right">close</i></span>
             <p>I created this site as part of the FreeCodeCamp cirriculum. It will generate a random quote and allow you to share it via Twitter.</p>
             <div class="card-action center-align"><a href="https://njm8.github.io/FreeCodeCampFrontEndProjects/randomQuoteGenerator/" target="_blank"><i aria-hidden="true" class="fa fa-external-link fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card small hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://s13.postimg.org/6svfmvlfb/weather_Preview.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Local Weather by Gif!</span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Local Weather by Gif!<i class="material-icons right">close</i></span>
+            <p>I created this site as part of the FreeCodeCamp cirriculum. It will display your local weather or any location you search for by finding random gifs that match todays weather discription. Enjoy!</p>
+            <div class="card-action center-align"><a href="https://njm8.github.io/FreeCodeCampFrontEndProjects/localWeather/" target="_blank"><i aria-hidden="true" class="fa fa-external-link fa-2x"></i></a>
             </div>
           </div>
         </div>
@@ -142,7 +159,6 @@ Make those links open in new windows
   </div> -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
   <script src="js/portfolio.js"></script>
 </body>
 </html>
