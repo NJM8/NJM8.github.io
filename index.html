@@ -8,7 +8,7 @@
 <body  class="blue-grey lighten-5" id="top">
   <div class="fixed-action-btn horizontal click-to-toggle" id="floating_hamburger">
     <a class="btn-floating btn-large teal lighten-2">
-      <i class="large material-icons">menu</i>
+      <i class="large material-icons" id="hamburger-icon">menu</i>
     </a>
     <ul>
       <li><a class="btn-floating deep-purple accent-2" href="#top"><i class="material-icons">arrow_upward</i></a></li>
@@ -34,7 +34,7 @@
       <div class="col s12 m9">
         <div class="card teal lighten-2 hoverable">
           <div class="card-content white-text">
-            <p class="personal">Hello, I am an aspiring Web Developer based in Ithaca, NY. I love working with technologies like JavaScript, HTML, CSS, NodeJS, MongoDB and C. Whether I am building a user interface or tyring to figure out Dijkstra's algorithm, I'm always tinkering to improve things. Why not leave the world a better place right?</p>
+            <p class="personal">Hello, I am an aspiring Web Developer based in Ithaca, NY. I love working with technologies like JavaScript, HTML, CSS, NodeJS, MongoDB and C. Whether I am building a user interface or trying to figure out Dijkstra's algorithm, I'm always tinkering to improve things. Why not leave the world a better place right?</p>
             <br>
             <p class="personal">Please check out some of my work below. Get in touch if you like what you see. Also don't forget to check out my kid. He is bigger now but still super cute.</p>
           </div>
@@ -125,7 +125,7 @@
             <span class="card-title grey-text text-darken-4 center-align">Get in touch with me.</span>
           </div>
           <div class="card-action center-align">
-            <a class="contact-link" href="mailto:healthynate@gmail.com"><i aria-hidden="true" class="fa fa-envelope-o fa-2x"></i></a>
+            <a class="contact-link modal-trigger" href="#emailModal"><i aria-hidden="true" class="fa fa-envelope-o fa-2x"></i></a>
             <a class="contact-link" href="https://github.com/NJM8" target="_blank"><i aria-hidden="true" class="fa fa-github fa-2x"></i></a>
             <a class="contact-link" href="https://www.linkedin.com/in/nathan-mallison-6312945b" target="_blank"><i aria-hidden="true" class="fa fa-linkedin fa-2x"></i></a>
           </div>
@@ -144,12 +144,33 @@
       </div>
     </div>
   </div>
-<!--   <div id="emailmodal" class="modal teal lighten-2">
-    <div class="modal-content white-text">
-        <h5>Email me anytime: Healthynate@gmail.com</h5>
-        <h5><a href="mailto:healthynate@gmail.com" class="email-link">Click here</a> to open your default email client</h5>
+  <div class="modal blue-grey lighten-5" id="emailModal"> 
+    <div class="modal-content">
+        <p>Email me anytime @ Healthynate@gmail.com or fill out the form below.</p>
+        <div class="row">
+          <form class="">
+            <div class="row">
+              <div class="input-field">
+                <input id="name" type="text" class="validate">
+                <label for="first_name"> Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field">
+                <input id="message" type="text" class="validate">
+                <label for="message">Message</label>
+              </div>
+            </div>
+          </form>
+        </div>
     </div>
-  </div> -->
+  </div>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/portfolio.js"></script>
