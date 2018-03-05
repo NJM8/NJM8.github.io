@@ -9,14 +9,7 @@ $(document).ready(function(){
      }, 800);
   });
 
-  $('#floating_hamburger').on('click', function(event){
-    //const icon = $('#hamburger-icon').html();
-
-    // if (icon === 'menu') {
-    //   $('#hamburger-icon').html('close');
-    // } else {
-    //   $('#hamburger-icon').html('menu');
-    // }
+  $('#hamburger-icon').on('click', function(event){
     const clicked = $('#hamburger-icon').hasClass('clicked');
 
     if (clicked) {
