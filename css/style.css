@@ -67,6 +67,15 @@ body {
   padding: 0 10px 0 10px;
 }
 
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
 @media only screen and (max-width: 400px) {
 	.name {
 		padding-left: 40px;
