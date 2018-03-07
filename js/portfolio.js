@@ -1,6 +1,14 @@
 $(document).ready(function(){
-  $('.parallax').parallax();
-
+  // [].forEach.call(document.querySelectorAll('noscript'), function(noscript) {
+  //   var img = new Image();
+  //   img.setAttribute('data-src', '');
+  //   img.parentNode.insertBefore(img, noscript);
+  //   img.onload = function() {
+  //     img.removeAttribute('data-src');
+  //   };
+  //   img.src = noscript.getAttribute('data-src');
+  // });
+  
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = function() {
@@ -8,6 +16,8 @@ $(document).ready(function(){
     };
   });
 
+  $('.parallax').parallax();
+  
   $(document).on('click', 'a[href^="#"]', function(event){
     event.preventDefault();
   
