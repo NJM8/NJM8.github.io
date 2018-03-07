@@ -1,6 +1,15 @@
 $(document).ready(function(){
   $('.parallax').parallax();
-  
+  console.log('hi');
+
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    console.log(img);
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+      img.removeAttribute('data-src');
+    };
+  });
+
   $(document).on('click', 'a[href^="#"]', function(event){
     event.preventDefault();
   
