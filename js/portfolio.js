@@ -1,6 +1,5 @@
 $(document).ready(function(){
   $('.parallax').parallax();
-  console.log('hi');
 
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     console.log(img);
