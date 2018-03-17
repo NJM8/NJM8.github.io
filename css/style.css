@@ -55,11 +55,17 @@ body {
 }
 
 .clicked {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .unclicked {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -69,6 +75,8 @@ body {
 
 img {
 	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
 
@@ -104,12 +112,3 @@ img[data-src] {
     padding-left: 120px;
   }
 }
-
-
-
-
-
-
-
-
-
