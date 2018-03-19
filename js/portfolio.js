@@ -1,6 +1,8 @@
 $(document).ready(function(){
+  // materializeCSS parallax initializer for parallax pictures
   $('.parallax').parallax();
 
+  // simple lazy loader for images, switchws data-src attribute to src 
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = function() {
@@ -8,6 +10,7 @@ $(document).ready(function(){
     };
   });
 
+  // simple scrolling animator. when clicking a # link it will get the offset to the linked element and animate there
   $(document).on('click', 'a[href^="#"]', function(event){
     event.preventDefault();
   
@@ -16,6 +19,7 @@ $(document).ready(function(){
      }, 800);
   });
 
+  // hamburger icon animation using classes, switches to X icon after animation
   $('#hamburger-icon').on('click', function(event){
     const clicked = $('#hamburger-icon').hasClass('clicked');
 
@@ -36,6 +40,7 @@ $(document).ready(function(){
     }
   });
 
+  // materializeCSS modal initializer.
   $('.modal').modal();
 });
 
