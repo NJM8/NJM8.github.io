@@ -12,9 +12,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" defer></script>
   <script src="js/portfolio.js" defer></script>
 <body class="blue-grey lighten-5" id="top">
-  <div class="fixed-action-btn horizontal click-to-toggle" id="floating_hamburger">
-    <a class="btn-floating btn-large teal lighten-2">
-      <i class="large material-icons" id="hamburger-icon">menu</i>
+  <div class="fixed-action-btn horizontal click-to-toggle">
+    <!-- hamburger css inspired by https://codepen.io/designcouch/pen/Atyop -->
+    <a class="btn-floating btn-large teal lighten-2" id="hamburger-button">
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </a>
     <ul>
       <li><a class="btn-floating deep-purple accent-2" href="#top"><i class="material-icons">arrow_upward</i></a></li>

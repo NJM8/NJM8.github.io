@@ -19,26 +19,10 @@ $(document).ready(function(){
      }, 800);
   });
 
-  // hamburger icon animation using classes, switches to X icon after animation
-  $('#hamburger-icon').on('click', function(event){
-    const clicked = $('#hamburger-icon').hasClass('clicked');
-
-    if (clicked) {
-      $('#hamburger-icon').removeClass('clicked');
-      $('#hamburger-icon').addClass('unclicked');
-      $(this).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-        function(event) {
-          $('#hamburger-icon').html('menu');
-      });
-    } else {
-      $('#hamburger-icon').removeClass('unclicked');
-      $('#hamburger-icon').addClass('clicked');
-      $(this).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-        function(event) {
-          $('#hamburger-icon').html('close');
-      }); 
-    }
-  });
+  // toggle open class on hamburger when button is clicked for css animations
+  $('#hamburger-button').click(function(){
+		$('#hamburger').toggleClass('open');
+	});
 
   // materializeCSS modal initializer.
   $('.modal').modal();
