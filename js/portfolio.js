@@ -26,6 +26,7 @@ $(document).ready(function(){
 
   // materializeCSS modal initializer.
   $('.modal').modal();
+  
 });
 
 
