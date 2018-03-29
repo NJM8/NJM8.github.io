@@ -24,6 +24,7 @@ $(document).ready(function(){
   // materializeCSS modal initializer.
   $('.modal').modal();
 
+  // flip down arrow on scroll
   $(document).on('scroll', function(){
     let scroll = $(window).scrollTop();
     if (scroll > 50) {
