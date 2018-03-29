@@ -12,10 +12,14 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" defer></script>
   <script src="js/portfolio.js" defer></script>
+  <script src="js/smoothParallax.js" defer></script>
 <body class="blue-grey lighten-5" id="top">
+  <div>
+    <img class="bg" data-src="https://s5.postimg.org/enpn6rpxj/emile-perron-190221-unsplash-min.jpg" alt="Beach at sunset">
+  </div>
   <div class="fixed-action-btn horizontal click-to-toggle">
     <!-- hamburger css inspired by https://codepen.io/designcouch/pen/Atyop -->
-    <a class="btn-floating btn-large teal lighten-2" id="hamburger-button">
+    <a class="btn-floating btn-large blue-grey lighten-2" id="hamburger-button">
       <div id="hamburger">
         <span></span>
         <span></span>
@@ -30,34 +34,25 @@
       <li><a class="btn-floating light-blue accent-3" href="#contact"><i class="material-icons">contact_mail</i></a></li>
     </ul>
   </div>
-  <div class="parallax-container">
-    <div class="parallax">
-      <h1 class="name">Nathan Mallison</h1>
-      <h4 class="title">Web Developer</h4>
-      <img data-src="https://s13.postimg.org/svjci2uh3/wallpaper_boat_alone_beach_sea_sunset-min.jpg" alt="Beach at sunset">
-    </div>
+  <div class="intro">
+    <h1 class="name">Nathan Mallison</h1>
+    <h4 class="title">Web Developer</h4>
+    <i class="material-icons medium downArrow">keyboard_arrow_down</i>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m3">
-        <div class="valign-wrapper">
-          <span class="personal-title valign" id="personal">About Me</span>
-        </div>
-      </div>
-      <div class="col s12 m8">
-        <div class="card teal lighten-2 hoverable">
-          <div class="card-content white-text">
-            <p class="personal">Hello, I am an aspiring Web Developer based in Ithaca, NY. I love working with technologies like JavaScript, HTML, CSS, NodeJS, MongoDB and C. Whether I am building a user interface or trying to figure out Dijkstra's algorithm, I'm always tinkering to improve things. Why not leave the world a better place, right?</p>
-            <br>
-            <p class="personal">Please check out some of my work below. Get in touch if you like what you see.</p>
-          </div>
-        </div>
+  <div class="row aboutMe">
+    <div class="col s12">
+      <div class="valign-wrapper">
+        <span class="personal-title valign" id="personal">About Me</span>
       </div>
     </div>
-  </div>
-  <div class="parallax-container parallax-2">
-    <div class="parallax">
-      <img data-src="https://s13.postimg.org/uncbd3o5j/road_through_redwoods-min.jpg" alt="Road through redwoods">
+    <div class="col s6 aboutMeText">
+      <div class="card blue-grey lighten-1 hoverable">
+        <div class="card-content white-text">
+          <p class="personal">I am an aspiring Web Developer based in Ithaca, NY. I love working with technologies like JavaScript, HTML, CSS, NodeJS, MongoDB and C. Whether I am building a user interface or trying to figure out Dijkstra's algorithm, I'm always tinkering to improve things. Why not leave the world a better place, right?</p>
+          <br>
+          <p class="personal">Please check out some of my work below. Get in touch if you like what you see.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div id="portfolioContainer">
@@ -181,35 +176,21 @@
       </div>
     </div>
   </div>
-  <div class="parallax-container parallax-2">
-    <div class="parallax">
-      <img data-src="https://s13.postimg.org/54jz04ubr/MP_Green_Pond_Paviion_301_2-min.jpg" alt="Photo of pavilion next to pond in fall">
-    </div>
-  </div>
-  <div class="container">
+  <div class="contactMe">
     <div class="row">
       <div class="col s12 m5 l4">
         <div class="valign-wrapper">
           <span class="personal-title" id="contact">Contact</span>
         </div>
-        <div class="card">
+        <div class="card contactOptions blue-grey lighten-1">
           <div class="collection">
-            <a class="contact-link modal-trigger collection-item largerText" href="#emailModal">Email <i aria-hidden="true" class="right fa fa-envelope-o fa-2x"></i></a>
-            <a class="contact-link collection-item largerText" href="https://github.com/NJM8" target="_blank" rel="noopener">Github <i aria-hidden="true" class="right fa fa-github fa-2x"></i></a>
-            <a class="contact-link collection-item largerText" href="https://www.linkedin.com/in/nathan-mallison-6312945b" target="_blank"  rel="noopener"> Linked in<i aria-hidden="true" class="right fa fa-linkedin fa-2x"></i></a>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card hoverable">
-            <div class="card-content">
-              <p class="center-align"><i aria-hidden="true" class="fa fa-copyright largerText"></i> Nathan Mallison  2018</p>
-            </div>
+            <a class="contact-link modal-trigger collection-item largerText white-text" href="#emailModal">Email<i aria-hidden="true" class="right fa fa-envelope-o fa-2x"></i></a>
+            <a class="contact-link collection-item largerText white-text" href="https://github.com/NJM8" target="_blank" rel="noopener">Github<i aria-hidden="true" class="right fa fa-github fa-2x"></i></a>
+            <a class="contact-link collection-item largerText white-text" href="https://www.linkedin.com/in/nathan-mallison-6312945b" target="_blank"  rel="noopener">Linked in<i aria-hidden="true" class="right fa fa-linkedin fa-2x"></i></a>
           </div>
         </div>
       </div>
-      <div class="col s1">
-      </div>
-      <div class="col s12 m7 l7 center-align valign-wrapper">
+      <div class="col s12 m7 l7 center-align valign-wrapper picture">
         <div class="card hoverable">
           <div class="card-image">
             <img data-src="https://s13.postimg.org/g456bsi6v/nate_and_kai-min.jpg" alt="Picture of Nate and his son Kai">
@@ -249,10 +230,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-

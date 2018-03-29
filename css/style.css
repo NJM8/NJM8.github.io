@@ -1,33 +1,105 @@
-body {
-  overflow: auto !important;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-#portfolioContainer {
-  width: 90%;
-  margin: 0 auto;
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
-.name {
-  position: absolute;
-  z-index: 100;
+img {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+.intro {
+  padding-top: 50px;
+  padding-left: 50px;
   color: white;
-  padding-left: 150px;
-  text-shadow: 3px 3px 3px #90a4ae;
+  text-shadow: 2px 2px 2px #90a4ae;
+  height: 100vh;
+}
+
+.aboutMe {
+  height: 100vh;
+}
+
+.aboutMeText {
+  margin-top: 75px;
+  margin-left: 25px !important;
+}
+
+.contactMe {
+  height: 100vh;
+}
+
+.contactOptions {
+  margin-top: 75px;
+  margin-left: 50px;
+  width: 200px;
 }
 
 .title {
+  padding-left: 30px;
+  margin-top: -10px;
+}
+
+.downArrow {
   position: absolute;
-  z-index: 100;
-  color: white;
-  padding-left: 170px;
-  padding-top: 80px;
-  text-shadow: 3px 3px 3px #90a4ae;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  text-shadow: none;
+  transition: all 1s;  
+}
+
+.upArrowed {
+  transform: rotate(180deg);
+}
+
+#portfolioContainer {
+  width: 89%;
+  height: 200vh;
+  margin: 0 auto;
+}
+
+.picture {
+  margin-top: 120px;
+}
+
+#portfolio {
+  margin-bottom: 30px;
+}
+
+#contact {
+  margin-left: 45px;
 }
 
 .personal-title {
+  color: white;
+  text-shadow: 2px 2px 2px #90a4ae;  
   font-style: italic;
   padding-top: 35px;
   font-size: 42px;
+  padding-left: 30px;
 }
 
 .personal {
@@ -36,12 +108,14 @@ body {
   letter-spacing: 0.25px;
 }
 
-.parallax-2 {
-  height: 300px;
+.contact-link {
+  border: 1px solid transparent !important;
+  background-color: #78909c !important;
+  padding: 15px !important;
 }
 
-.contact-link {
-  padding-left: 40px;
+a:hover {
+  background-color: #b0bec5 !important;
 }
 
 .email-link {
@@ -71,17 +145,6 @@ body {
 
 .tooltipped {
   padding: 0 10px 0 10px;
-}
-
-img {
-	opacity: 1;
-	-webkit-transition: opacity 0.3s;
-	-o-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
-
-img[data-src] {
-	opacity: 0;
 }
 
 .largerText {

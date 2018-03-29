@@ -1,7 +1,4 @@
 $(document).ready(function(){
-  // materializeCSS parallax initializer for parallax pictures
-  $('.parallax').parallax();
-
   // simple lazy loader for images, switchws data-src attribute to src 
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));
@@ -26,6 +23,15 @@ $(document).ready(function(){
 
   // materializeCSS modal initializer.
   $('.modal').modal();
+
+  $(document).on('scroll', function(){
+    let scroll = $(window).scrollTop();
+    if (scroll > 50) {
+      $('.downArrow').addClass('upArrowed');
+    } else {
+      $('.downArrow').removeClass('upArrowed');
+    }
+  })
   
 });
 
