@@ -24,15 +24,33 @@ $(document).ready(function(){
   // materializeCSS modal initializer.
   $('.modal').modal();
 
-  // flip down arrow on scroll
-  $(document).on('scroll', function(){
+  function debounce(func, wait = 15, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
+  function rotateArrow(){
     let scroll = $(window).scrollTop();
-    if (scroll > 50) {
+    console.log(scroll);
+    if (scroll > 200) {
       $('.downArrow').addClass('upArrowed');
     } else {
       $('.downArrow').removeClass('upArrowed');
     }
-  })
+  }
+
+  // flip down arrow on scroll
+  $(document).on('scroll', debounce(rotateArrow));
   
 });
 
