@@ -24,6 +24,7 @@ $(document).ready(function(){
   // materializeCSS modal initializer.
   $('.modal').modal();
 
+  // slow down on scroll animation firing to prevent slow down
   function debounce(func, wait = 15, immediate = true) {
     var timeout;
     return function() {
@@ -39,9 +40,9 @@ $(document).ready(function(){
     };
   }
 
+  // rotate down arrow if scrolled past 200 px, else flip it down again
   function rotateArrow(){
     let scroll = $(window).scrollTop();
-    console.log(scroll);
     if (scroll > 200) {
       $('.downArrow').addClass('upArrowed');
     } else {
@@ -49,9 +50,8 @@ $(document).ready(function(){
     }
   }
 
-  // flip down arrow on scroll
+  // listener to scroll, pass desired function to debounce to keep an eye on timing
   $(document).on('scroll', debounce(rotateArrow));
-  
-});
 
+});
 
