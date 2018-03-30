@@ -1,5 +1,7 @@
 html, body {
   max-width: 100%;
+  letter-spacing: 1px;
+  font-family: 'Cabin', sans-serif;
 }
 
 img.bg {
@@ -30,11 +32,15 @@ img[data-src] {
 }
 
 .intro {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 50px;
   color: white;
   text-shadow: 2px 2px 2px #90a4ae;
   height: 100vh;
+}
+
+.name {
+  font-style: italic;
 }
 
 .aboutMe {
@@ -98,13 +104,13 @@ img[data-src] {
   text-shadow: 2px 2px 2px #90a4ae;  
   font-style: italic;
   padding-top: 35px;
-  font-size: 42px;
+  font-size: 3rem;
   padding-left: 30px;
 }
 
 .personal {
   font-weight: 400;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   letter-spacing: 0.25px;
 }
 
@@ -171,8 +177,8 @@ a:hover {
     width: 200px;
   }
   .title {
-    padding-left: 70px;
-    padding-top: 45px;
+    padding-left: 80px;
+    padding-top: 15px;
   }
 
   .contactOptions {
