@@ -54,7 +54,8 @@ $(document).ready(function(){
   $(document).on('scroll', debounce(rotateArrow));
 
 
-  let background = document.getElementsByClassName('bg');
+  let background = document.querySelector('.bg');
+  console.log(background);
 
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
