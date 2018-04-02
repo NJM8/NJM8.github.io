@@ -160,6 +160,9 @@ img[data-src] {
 }
 
 @media only screen and (max-width: 400px) {
+  img.bg {
+    height: 120vh;
+  }
   .title {
     padding-top: 15px;
   }
@@ -172,6 +175,9 @@ img[data-src] {
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 600px) {
+  img.bg {
+    height: 120vh;
+  }
 	.name {
     padding-left: 40px;
     width: 200px;
@@ -191,6 +197,9 @@ img[data-src] {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+  img.bg {
+    height: 120vh;
+  }
   .contactOptions {
     margin-top: 15px;
   }
