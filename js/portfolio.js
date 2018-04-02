@@ -60,6 +60,7 @@ $(document).ready(function(){
 
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    console.log('is mobile');
     bg.style.height = window.screen.height;
     intro.style.height = window.screen.height;
     aboutMe.style.height = window.screen.height;
