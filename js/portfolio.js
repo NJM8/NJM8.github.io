@@ -53,13 +53,9 @@ $(document).ready(function(){
   // listener to scroll, pass desired function to debounce to keep an eye on timing
   $(document).on('scroll', debounce(rotateArrow));
 
-  // Fix background image jump on mobile
+  // Fix element jump on mobile scroll when url bar hides/shows
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    console.log('is mobile');
-    console.log(window.screen.height);
-
     $('.bg').css('height', `${window.screen.height}`);
-    console.log($('.bg').height());
     $('.intro').css('height', `${window.screen.height}`);
     $('.aboutMe').css('height', `${window.screen.height}`);
     $('.contactMe').css('height', `${window.screen.height}`);

@@ -160,6 +160,9 @@ img[data-src] {
 }
 
 @media only screen and (max-width: 400px) {
+  #contact {
+    margin-top: 100px;
+  }
   .title {
     padding-top: 15px;
   }
