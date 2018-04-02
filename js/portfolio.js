@@ -55,7 +55,6 @@ $(document).ready(function(){
 
 
   let background = document.querySelector('.bg');
-  console.log(background);
 
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
