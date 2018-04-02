@@ -52,5 +52,20 @@ $(document).ready(function(){
 
   // listener to scroll, pass desired function to debounce to keep an eye on timing
   $(document).on('scroll', debounce(rotateArrow));
+
+  let background = document.querySelector('html');
+
+  // Fix background image jump on mobile
+  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    background.style.top = 'auto';
+    background.style.bottom = 0;
+
+    window.onresize = sizeBackground;
+    sizeBackground();
+  }
+
+  function sizeBackground() {
+    background.style.height = screen.height;
+  }
 });
 
