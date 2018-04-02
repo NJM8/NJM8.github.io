@@ -53,20 +53,16 @@ $(document).ready(function(){
   // listener to scroll, pass desired function to debounce to keep an eye on timing
   $(document).on('scroll', debounce(rotateArrow));
 
-  let bg = document.querySelector('.bg');
-  let intro = document.querySelector('.intro');
-  let aboutMe = document.querySelector('.aboutMe');
-  let contactMe = document.querySelector('.contactMe');
-
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
     console.log('is mobile');
     console.log(window.screen.height);
-    bg.style.height = window.screen.height;
-    console.log(bg.style.height);
-    intro.style.height = window.screen.height;
-    aboutMe.style.height = window.screen.height;
-    contactMe.style.height = window.screen.height;
+
+    $('.bg').css('height', `${window.screen.height}`);
+    console.log($('.bg').height());
+    $('.intro').css('height', `${window.screen.height}`);
+    $('.aboutMe').css('height', `${window.screen.height}`);
+    $('.contactMe').css('height', `${window.screen.height}`);
   }
 });
 
