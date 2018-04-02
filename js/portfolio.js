@@ -63,6 +63,7 @@ $(document).ready(function(){
     console.log('is mobile');
     console.log(window.screen.height);
     bg.style.height = window.screen.height;
+    console.log(bg.style.height);
     intro.style.height = window.screen.height;
     aboutMe.style.height = window.screen.height;
     contactMe.style.height = window.screen.height;
