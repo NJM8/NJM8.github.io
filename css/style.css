@@ -134,6 +134,7 @@ img[data-src] {
 .fixed-action-btn {
   top: 20px; 
   right: 20px;
+  bottom: auto;
 }
 
 .clicked {
