@@ -44,20 +44,20 @@ img[data-src] {
   font-style: italic;
 }
 
-.aboutMe {
+.about-me {
   height: 100vh;
 }
 
-.aboutMeText {
+.about-me-text {
   margin-top: 75px;
   margin-left: 25px !important;
 }
 
-.contactMe {
+.contact-me {
   height: 100vh;
 }
 
-.contactOptions {
+.contact-links {
   margin-top: 75px;
   margin-left: 50px;
   width: 200px;
@@ -116,14 +116,8 @@ img[data-src] {
 }
 
 .contact-link {
-  border: 1px solid transparent !important;
-  background-color: #78909c !important;
-  padding: 15px !important;
-  font-size: 1.05rem;  
-}
-
-.contact-link:hover {
-  background-color: #b0bec5 !important;
+  width: 100%;
+  margin: 10px 0 10px;  
 }
 
 .email-link {
@@ -167,7 +161,7 @@ img[data-src] {
   .title {
     padding-top: 15px;
   }
-  .contactOptions {
+  .contact-links {
     margin-top: 10px;
   }
   .picture {
@@ -187,7 +181,7 @@ img[data-src] {
     padding-left: 80px;
     padding-top: 15px;
   }
-  .contactOptions {
+  .contact-links {
     margin-top: 10px;
   }
   .picture {
@@ -199,7 +193,7 @@ img[data-src] {
   #contact {
     margin-top: 100px;
   }
-  .contactOptions {
+  .contact-links {
     margin-top: 15px;
   }
   .picture {
